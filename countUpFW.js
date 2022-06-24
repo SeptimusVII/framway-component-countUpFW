@@ -1,5 +1,4 @@
 var CountUp = require('countup.js').CountUp;
-console.log(CountUp);
 module.exports = function(app){
     var CountUpFW = Object.getPrototypeOf(app).CountUpFW = new app.Component("countUpFW");
     // CountUpFW.debug = true;
