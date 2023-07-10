@@ -3,8 +3,8 @@ module.exports = function(app){
     var CountUpFW = Object.getPrototypeOf(app).CountUpFW = new app.Component("countUpFW");
     // CountUpFW.debug = true;
     CountUpFW.createdAt      = "2.0.0";
-    CountUpFW.lastUpdate     = "2.3.0";
-    CountUpFW.version        = "1.1.0";
+    CountUpFW.lastUpdate     = "2.3.4";
+    CountUpFW.version        = "1.2.0";
     // CountUpFW.factoryExclude = true;
     // CountUpFW.loadingMsg     = "This message will display in the console when component will be loaded.";
     // CountUpFW.requires       = [];
