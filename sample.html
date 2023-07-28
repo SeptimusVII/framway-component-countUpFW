@@ -1,5 +1,18 @@
-<div class="countUpFW" data-startval="0" data-endval="1000" data-decimals="" data-duration="3" data-delay="1" >
+<div class="countUpFW" data-startval="0" data-endval="1000" data-decimals="" data-decimal="" data-separator data-duration="" data-delay="" data-prefix="" >
   <span class="countUpFW__num"></span>
   <span class="countUpFW__unit">€</span>
   <div class="countUpFW__label">Lorem ipsum</div>
 </div>
+
+<constructor component="countUpFW">
+  <field type="separator" label="countUpFW parameters"></field>
+  <field type="text" label="Start value" target="data-startval" value="0" helper=""></field>
+  <field type="text" label="End value" target="data-endval" value="1000" helper=""></field>
+  <field type="number" label="Duration" target="data-duration" value="2" helper="Duration for the counter to go from start to end value (in s)"></field>
+  <field type="number" label="Delay" target="data-delay" value="1" helper="Delay before starting animation (in s)"></field>
+  <field type="text" label="Prefix" target="data-prefix" value="" helper="Add an optionnal text or symbol before the animated numbers"></field>
+  <field type="empty"></field>
+  <field type="number" label="Number of decimals" target="data-decimals" value="" helper="changes the number of decimals displayed (default 0)"></field>
+  <field type="text" label="Decimals separator" target="data-decimal" value="" helper="changes the separator for decimals (default is .)"></field>
+  <field type="checkbox" label="Thousands separator" target="data-separator" selected="true" helper="Apply a empty space to separate thousands (default true)"></field>
+</constructor>
