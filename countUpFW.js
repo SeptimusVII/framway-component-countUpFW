@@ -3,8 +3,8 @@ module.exports = function(app){
     var CountUpFW = Object.getPrototypeOf(app).CountUpFW = new app.Component("countUpFW");
     // CountUpFW.debug = true;
     CountUpFW.createdAt      = "2.0.0";
-    CountUpFW.lastUpdate     = "2.4.0";
-    CountUpFW.version        = "1.2.1";
+    CountUpFW.lastUpdate     = "2.6.0";
+    CountUpFW.version        = "1.2.2";
     // CountUpFW.factoryExclude = true;
     // CountUpFW.loadingMsg     = "This message will display in the console when component will be loaded.";
     // CountUpFW.requires       = [];
@@ -23,7 +23,7 @@ module.exports = function(app){
         countUp.options = {
             useEasing: true,
             useGrouping: true,
-            separator: countUp.separator?' ':'',
+            separator: countUp.separator==true?' ':countUp.separator!=false?countUp.separator:'',
             decimal: countUp.decimal,
             prefix: countUp.prefix,
             enableScrollSpy: true,
